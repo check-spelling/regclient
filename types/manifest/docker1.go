@@ -126,19 +126,19 @@ func (m *docker1SignedManifest) MarshalPretty() ([]byte, error) {
 }
 
 func (m *docker1Manifest) SetConfig(d types.Descriptor) error {
-	return wraperr.New(fmt.Errorf("set methods not supported for for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
+	return wraperr.New(fmt.Errorf("set methods not supported for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
 }
 
 func (m *docker1SignedManifest) SetConfig(d types.Descriptor) error {
-	return wraperr.New(fmt.Errorf("set methods not supported for for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
+	return wraperr.New(fmt.Errorf("set methods not supported for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
 }
 
 func (m *docker1Manifest) SetLayers(dl []types.Descriptor) error {
-	return wraperr.New(fmt.Errorf("set methods not supported for for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
+	return wraperr.New(fmt.Errorf("set methods not supported for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
 }
 
 func (m *docker1SignedManifest) SetLayers(dl []types.Descriptor) error {
-	return wraperr.New(fmt.Errorf("set methods not supported for for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
+	return wraperr.New(fmt.Errorf("set methods not supported for media type %s", m.desc.MediaType), types.ErrUnsupportedMediaType)
 }
 
 func (m *docker1Manifest) SetOrig(origIn interface{}) error {
