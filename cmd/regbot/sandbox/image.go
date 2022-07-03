@@ -160,7 +160,7 @@ func (s *Sandbox) configJSON(ls *lua.LState) int {
 	c := s.checkConfig(ls, 1)
 	cJSON, err := json.MarshalIndent(c.conf, "", "  ")
 	if err != nil {
-		ls.RaiseError("Failed outputing config: %v", err)
+		ls.RaiseError("Failed outputting config: %v", err)
 	}
 	ls.Push(lua.LString(string(cJSON)))
 	return 1

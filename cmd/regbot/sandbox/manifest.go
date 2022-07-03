@@ -239,7 +239,7 @@ func (s *Sandbox) manifestJSON(ls *lua.LState) int {
 	m := s.checkManifest(ls, 1, false, false)
 	mJSON, err := json.MarshalIndent(m.m, "", "  ")
 	if err != nil {
-		ls.RaiseError("Failed outputing manifest: %v", err)
+		ls.RaiseError("Failed outputting manifest: %v", err)
 	}
 	ls.Push(lua.LString(string(mJSON)))
 	return 1
