@@ -524,7 +524,7 @@ func (req *request) handleAuth() error {
 }
 
 func (req *request) httpDo() error {
-	// build the http reqest for the current mirror url
+	// build the http request for the current mirror url
 	httpReq, err := http.NewRequestWithContext(req.context, req.method, req.urls[req.curURL].String(), nil)
 	if err != nil {
 		return err
