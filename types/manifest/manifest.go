@@ -434,7 +434,7 @@ func fromCommon(c common) (Manifest, error) {
 	var m Manifest
 	var mt string
 	origDigest := c.desc.Digest
-	// extract common data from from rawBody
+	// extract common data from rawBody
 	if len(c.rawBody) > 0 {
 		c.manifSet = true
 		// extract media type from body if needed
