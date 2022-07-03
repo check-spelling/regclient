@@ -247,7 +247,7 @@ func TestTag(t *testing.T) {
 			t.Errorf("returned list mismatch, expected %v, received %v", listTagList, tags)
 		}
 	})
-	// list tags with pagenation
+	// list tags with pagination
 	t.Run("Pagenation", func(t *testing.T) {
 		listRef, err := ref.New(tsURL.Host + repoPath)
 		if err != nil {
