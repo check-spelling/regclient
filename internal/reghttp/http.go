@@ -763,7 +763,7 @@ func makeRootPool(rootCAPool [][]byte, rootCADirs []string, hostname string, hos
 // sortHostCmp to sort host list of mirrors
 func sortHostsCmp(hosts []*clientHost, upstream string) func(i, j int) bool {
 	now := time.Now()
-	// sort by backoff first, then priority decending, then upstream name last
+	// sort by backoff first, then priority descending, then upstream name last
 	return func(i, j int) bool {
 		if now.Before(hosts[i].backoffUntil) || now.Before(hosts[j].backoffUntil) {
 			return hosts[i].backoffUntil.Before(hosts[j].backoffUntil)
